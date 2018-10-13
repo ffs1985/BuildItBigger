@@ -54,5 +54,6 @@ public class EndpointsAsyncTaskTest extends ActivityInstrumentationTestCase2<Mai
             e.printStackTrace();
         }
         assertNotNull(returnedJoke);
+        assertFalse(returnedJoke.startsWith("Failed to connect to"));
     }
 }
